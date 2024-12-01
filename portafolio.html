@@ -8,6 +8,7 @@
 
 </head>
 <body>
+    <div class="contenedor">
     <header id="header">
         <ul>
             <li class="ol">
@@ -22,28 +23,51 @@
         </div>
     </header>
     <main id="sobremi">
-        <img src="mifoto.png">
-        <h1>Rodrigo Garcia Schwindt</h1>
-        <h2>Desarrollador web full stack</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut quasi harum accusamus, animi sapiente nemo laboriosam ducimus. Aperiam iste aut libero necessitatibus est voluptatibus cumque dolore eum consequuntur nisi.</p>
+        <div class="displayflexgap">
+            <img src="mifoto.jpg">
+            <div class="flexcolumn">
+                <p class="saludo">¡BIENVENIDO!</p>
+                <h1 class="nombre">Soy <span class="color"> Rodrigo Garcia Schwindt</span></h1>
+                <h2 class="subtitulo">Desarrollador web full stack</h2>
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut quasi harum accusamus, animi sapiente nemo laboriosam ducimus. Aperiam iste aut libero necessitatibus est voluptatibus cumque dolore eum consequuntur nisi.</p>
+            </div>
+        </div>
     <nav>
-        <a href="micv.pdf" download="micv.pdf">Mi cv</a>
-        <a href="linkedin.com"><img src="icon.png"></a>
-        <a href="github.com"><img src="icon.png"></a> 
-        <a href="gmail.com"><img src="icon.png"></a>
+        <a href="micv.pdf" download="micv.pdf"><img class="icon" src="cv.png"></a>
+        <a href="linkedin.com"><img class="icon" src="linkedin.png"></a>
+        <a href="github.com"><img class="icon" src="githubicon.png"></a> 
+        <a href="gmail.com"><img class="icon" src="gmailicon.png"></a>
     </nav>
     </main>
-    <section id="Proyectos">
-        <h3>Proyectos</h3>
+    <section id="tecnologias">
+        <h3>Tecnologias</h3>
+        <ul>
+            <li>
+                <div class="displayflexgap2">
+                    <img class="icon2" src="html.png">
+                    <img class="icon2" src="css.png">
+                </div>
+                <div class="displayflexgap2">
+                    <img class="icon2" src="js.png">
+                    <img class="icon2" src="python.png">
+                </div>
+            </li>
+        </ul>
     </section>
-    <section id="Contacto">
-        <h4>Contacto</h4>
+    <section id="proyectos">
+        <h4>Proyectos</h4>
+    </section>
+    <section id="contacto">
+        <h5>Contacto</h5>
         <form>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <input type="text"  placeholder="Asunto">
+            <div class="displayflex"><input type="email" placeholder="Correo Electrónico" required>
+                <input type="text"  placeholder="Asunto">
+            </div>
             <input type="text" placeholder="Mensaje">
             <input type="submit" placeholder="Enviar">
         </form>
+    </section>
+    </div>    
 
 
 
